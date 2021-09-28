@@ -1,0 +1,10 @@
+.PageNav {
+    background-color: #353535;
+    color: white;
+    height: 40px;
+}
+
+.PageNav p {
+    display: inline;
+    padding: 10px;
+}

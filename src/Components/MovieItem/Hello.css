@@ -1,0 +1,65 @@
+.Movies_Item_Image img {
+    height: 400px;
+    width: 100%;
+}
+
+.search-container {
+    display: grid;
+    margin: 3rem 8rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    align-items: start;
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+    justify-items: center;
+    z-index: 0;
+}
+
+.title_P {
+    background-color: #00ac4d;
+    border-color: #1f2e46;
+    border-radius: 4px;
+    border-width: 1px;
+    color: white;
+    font-size: 19.2px;
+    font-weight: 700;
+    line-height: 28.8px;
+    padding: 4px 8px;
+    text-align: left;
+}
+
+.Vote_Movie {
+    background-color: #0c1b36;
+    border-color: #1f2e46;
+    border-radius: 4px;
+    border-width: 1px;
+    color: white;
+    font-size: 19.2px;
+    font-weight: 700;
+    line-height: 28.8px;
+    padding: 4px 8px;
+    text-align: left;
+    position: absolute;
+}
+
+.title_name {
+    color: #0056b3;
+    display: inline-block;
+    font-family: -apple-system;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+
+.movie-container {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.Movies_body .Movies_Item {
+    margin: 0;
+}
+
+.container_123 .slick-slide {
+    width: 100vw;
+}
