@@ -21,15 +21,26 @@ export default class SliderShow extends Component {
           {moveBy.map((Items) => {
             const { backdrop_path, original_title, overview } = Items;
             return (
-              <div className="Slider_Item">
-                <img
-                  src={`https://image.tmdb.org/t/p/original${backdrop_path}`}
-                  alt="/"
-                />
-                <div className="Slider_title">
-                  <div className="Slider_title-text">
-                    <h1>{original_title}</h1>
-                    <p>{overview}</p>
+              <div
+                id="carouselExampleDark"
+                className="carousel carousel-dark slide"
+                data-bs-ride="carousel"
+              >
+                <div className="carousel-indicators"></div>
+                <div className="carousel-inner">
+                  <div
+                    className="carousel-item active"
+                    data-bs-interval={10000}
+                  >
+                    <img
+                      src={`https://image.tmdb.org/t/p/original${backdrop_path}`}
+                      className="d-block w-100"
+                      alt="..."
+                    />
+                    <div className="carousel-caption d-none d-md-block text-white">
+                      <h1>{original_title}</h1>
+                      <p>{overview}</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -40,6 +51,3 @@ export default class SliderShow extends Component {
     );
   }
 }
-
-
-

@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Navbar />
+        {/* <Navbar /> */}
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/moviesID/:id" component={MoviesID} />

@@ -86,13 +86,13 @@ export default class Home extends Component {
     const { moveBy } = this.state;
     return (
       <div>
-        <SliderShow moveBy={moveBy} />
         <SearchUser
           onFetchUser={this.onFetchUser}
           onSearchChange={this.onSearchChange}
           onSubmitSearchUser={this.onSubmitSearchUser}
           search={this.state.search}
         />
+        <SliderShow moveBy={moveBy} />
         <MovieItem moveBy={moveBy} />
         {this.state.more && <MovieMore handleMore={this.handleMore} />}
       </div>
